@@ -1,0 +1,71 @@
+body {
+    font-family: Arial;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+}
+
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.content {
+    margin-top: 100px;
+}
+
+h1 {
+    color: #6CB2E4;
+    font-size: 24px;
+}
+
+.code {
+    margin: 20px 0;
+}
+
+.code input {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid #6CB2E4;
+    border-radius: 10px;
+}
+
+.submit {
+    background-color: #6CB2E4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.resend {
+    margin-top: 20px;
+    color: #6CB2E4;
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.sendagain {
+            display: block;
+            margin-top: 10px;
+            color: #AEAEAE;
+            text-decoration: none;
+        }
