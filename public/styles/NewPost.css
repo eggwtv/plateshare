@@ -1,0 +1,265 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+h2 {
+    color: #6CB2E4;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+                0 10px 10px rgba(0, 0, 0, 0.22);
+    padding: 50px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px 0;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-section {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.upload-photo {
+    display: flex;
+    flex-direction: column;
+    width: 200px; 
+}
+
+.upload-title {
+    text-align: left;
+    width: 100%;
+}
+
+.upload-photo-box {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #eee;
+    margin-top: 10px;
+}
+
+.upload-photo-box input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.upload-photo-box::before {
+    content: '+';
+    font-size: 48px;
+    color: #ccc;
+}
+
+.recipe-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.recipe-info h2 {
+    margin: 10px 0 5px 0;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prep-time, .cook-time {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.serving-size {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    width: 30%;
+}
+
+.serving-size input {
+    width: 60px;
+    margin-right: 5px;
+}
+
+.serving-size span {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.difficulty {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.difficulty h2 {
+    margin-right: 20px;
+}
+
+input[type="radio"] {
+    margin: 0 10px;
+    transform: scale(0.8);
+    border: 2px solid #6CB2E4; 
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+input[type="radio"]:checked {
+    background-color: #6CB2E4;
+}
+
+input, textarea, select {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+textarea {
+    height: 150px;
+}
+
+.ingredients, .steps {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ingredient, .step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #6CB2E4;
+    background-color: #6CB2E4;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #5a9bd4;
+    border-color: #5a9bd4;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button.ghost {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+button.add-ingredient, button.add-step {
+    background-color: #fff;
+    color: #6CB2E4;
+    border: 1px solid #6CB2E4;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button.add-ingredient:hover, button.add-step:hover {
+    background-color: #6CB2E4;
+    color: #fff;
+}
+
+/* Styles for the sidebar and menu bar */
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #6CB2E4; 
+    color: white; 
+    display: none;
+    flex-direction: column;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.menu a:hover {
+    background-color: #575757; 
+}
+
+.menu .icon {
+    margin-right: 10px;
+}
+
+.menu .profile-pic {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.hamburger {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    z-index: 1100;
+}
+
